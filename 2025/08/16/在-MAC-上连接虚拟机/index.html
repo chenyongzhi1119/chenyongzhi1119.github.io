@@ -20,17 +20,21 @@
     var CONFIG = {"hostname":"chenyongzhi1119.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://chenyongzhi1119.github.io/tags/index.html">
+  <meta name="description" content="连接前准备 确定虚拟机网络设置是「桥接模式」。 在虚拟机的终端中，使用 ifconfig 命令查看虚拟机的 IP 地址。 确定当前虚拟机的用户名和密码。  在 MAC 上连接虚拟机 打开终端。 使用 ssh 命令连接到虚拟机：ssh parallels@192.168.1.101 -p 22 将 parallels 替换为你的虚拟机用户名。 将 192.168.1.101 替换为你的虚拟机 IP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在 MAC 上连接虚拟机">
+<meta property="og:url" content="https://chenyongzhi1119.github.io/2025/08/16/%E5%9C%A8-MAC-%E4%B8%8A%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/index.html">
 <meta property="og:site_name" content="Chen Yongzhi&#39;s Blog">
+<meta property="og:description" content="连接前准备 确定虚拟机网络设置是「桥接模式」。 在虚拟机的终端中，使用 ifconfig 命令查看虚拟机的 IP 地址。 确定当前虚拟机的用户名和密码。  在 MAC 上连接虚拟机 打开终端。 使用 ssh 命令连接到虚拟机：ssh parallels@192.168.1.101 -p 22 将 parallels 替换为你的虚拟机用户名。 将 192.168.1.101 替换为你的虚拟机 IP">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-07-07T16:13:21.000Z">
-<meta property="article:modified_time" content="2025-07-07T16:37:36.363Z">
+<meta property="og:image" content="https://chenyongzhi1119.github.io/images/2025-08-16-00-48-17.png">
+<meta property="article:published_time" content="2025-08-15T16:11:34.000Z">
+<meta property="article:modified_time" content="2025-08-15T16:48:19.199Z">
 <meta property="article:author" content="Chen Yongzhi">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://chenyongzhi1119.github.io/images/2025-08-16-00-48-17.png">
 
-<link rel="canonical" href="https://chenyongzhi1119.github.io/tags/">
+<link rel="canonical" href="https://chenyongzhi1119.github.io/2025/08/16/%E5%9C%A8-MAC-%E4%B8%8A%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/">
 
 
 <script id="page-configurations">
@@ -38,13 +42,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>tags | Chen Yongzhi's Blog
-</title>
+  <title>在 MAC 上连接虚拟机 | Chen Yongzhi's Blog</title>
   
 
 
@@ -158,51 +161,95 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="en">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://chenyongzhi1119.github.io/2025/08/16/%E5%9C%A8-MAC-%E4%B8%8A%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chen Yongzhi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chen Yongzhi's Blog">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          在 MAC 上连接虚拟机
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">tags
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-<div class="post-meta">
+              <time title="Created: 2025-08-16 00:11:34 / Modified: 00:48:19" itemprop="dateCreated datePublished" datetime="2025-08-16T00:11:34+08:00">2025-08-16</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="连接前准备"><a href="#连接前准备" class="headerlink" title="连接前准备"></a>连接前准备</h2><ol>
+<li>确定虚拟机网络设置是「桥接模式」。</li>
+<li>在虚拟机的终端中，使用 ifconfig 命令查看虚拟机的 IP 地址。</li>
+<li>确定当前虚拟机的用户名和密码。</li>
+</ol>
+<h2 id="在-MAC-上连接虚拟机"><a href="#在-MAC-上连接虚拟机" class="headerlink" title="在 MAC 上连接虚拟机"></a>在 MAC 上连接虚拟机</h2><ol>
+<li>打开终端。</li>
+<li>使用 ssh 命令连接到虚拟机：ssh <a href="mailto:&#x70;&#x61;&#x72;&#x61;&#108;&#x6c;&#x65;&#108;&#x73;&#64;&#x31;&#x39;&#x32;&#46;&#x31;&#54;&#56;&#46;&#x31;&#x2e;&#x31;&#48;&#x31;">parallels@192.168.1.101</a> -p 22<ul>
+<li>将 <code>parallels</code> 替换为你的虚拟机用户名。</li>
+<li>将 <code>192.168.1.101</code> 替换为你的虚拟机 IP 地址。</li>
+<li>将 <code>22</code> 替换为你的虚拟机 SSH 端口号（默认是 22）。</li>
+</ul>
+</li>
+<li>输入密码以完成连接。</li>
+</ol>
+<p>连接成功后，你将看到MAC的命令行界面：<br><img src="/../images/2025-08-16-00-48-17.png"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/08/08/UsersSystem-Golang/" rel="prev" title="UsersSystem-Golang">
+      <i class="fa fa-chevron-left"></i> UsersSystem-Golang
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-              No tags
-            </div>
-            <div class="tag-cloud-tags">
-              
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -253,6 +300,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-number">1.</span> <span class="nav-text">连接前准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8-MAC-%E4%B8%8A%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="nav-number">2.</span> <span class="nav-text">在 MAC 上连接虚拟机</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
