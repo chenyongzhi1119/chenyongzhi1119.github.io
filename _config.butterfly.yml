@@ -24,7 +24,7 @@ menu:
 # --------------------------------------
 
 code_blocks:
-  theme: darker
+  theme: pale night
   macStyle: true
   height_limit: false
   word_wrap: false
@@ -36,6 +36,7 @@ code_blocks:
 # Social media links
 social:
   fab fa-github: https://github.com/chenyongzhi1119 || Github || '#24292e'
+  fas fa-rss: /atom.xml || RSS || '#ff6600'
 
 # --------------------------------------
 # Image Settings
@@ -260,7 +261,7 @@ translate:
   msgToTraditionalChinese: '繁'
   msgToSimplifiedChinese: '簡'
 
-readmode: true
+readmode: false
 
 # 暗黑模式：自动跟随系统
 darkmode:
@@ -302,8 +303,8 @@ wordcount:
   total_wordcount: true
 
 busuanzi:
-  site_uv: true
-  site_pv: true
+  site_uv: false
+  site_pv: false
   page_pv: true
 
 # --------------------------------------
@@ -701,3 +702,4 @@ CDN:
   version: true
   custom_format:
   option:
+    busuanzi: https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js

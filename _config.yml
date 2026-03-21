@@ -4,7 +4,7 @@
 
 # Site
 title: Chen Yongzhi's Blog
-subtitle: A Journey of Learning and Sharing
+subtitle: 专注 AI · Golang · 系统方向的技术博客
 description: '在校研究生，记录编程学习、算法、AI 项目的技术博客'
 keywords: '博客,编程,算法,AI,Go,Python,研究生'
 author: Chen Yongzhi
@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://chenyongzhi1119.github.io/
-permalink: :year/:month/:day/:title/
+permalink: posts/:slug/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -49,7 +49,7 @@ highlight:
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   preprocess: true
   line_number: true
@@ -97,6 +97,13 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+
+# RSS Feed
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

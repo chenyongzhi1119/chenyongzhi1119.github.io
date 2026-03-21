@@ -1,6 +1,7 @@
 ---
 title: 在 MAC 上连接虚拟机
 date: 2025-08-16 00:11:34
+slug: mac-connect-vm
 categories: 工具
 tags:
   - Mac

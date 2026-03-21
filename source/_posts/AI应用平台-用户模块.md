@@ -1,6 +1,7 @@
 ---
 title: AI应用平台 - 用户模块
 date: 2025-12-11 18:28:01
+slug: ai-platform-user-module
 categories: 项目
 tags:
   - Go

@@ -1,6 +1,7 @@
 ---
 title: UsersSystem-Golang
 date: 2025-08-08 15:36:29
+slug: golang-users-system
 categories: 项目
 tags:
   - Go

@@ -1,5 +1,6 @@
 ---
 title: 日常创建博客到部署的流程
+slug: hexo-blog-workflow
 categories: 日常
 tags:
   - Hexo
