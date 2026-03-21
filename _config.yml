@@ -5,11 +5,11 @@
 # Site
 title: Chen Yongzhi's Blog
 subtitle: A Journey of Learning and Sharing
-description: ''
-keywords:
+description: '在校研究生，记录编程学习、算法、AI 项目的技术博客'
+keywords: '博客,编程,算法,AI,Go,Python,研究生'
 author: Chen Yongzhi
-language: en
-timezone: ''
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'

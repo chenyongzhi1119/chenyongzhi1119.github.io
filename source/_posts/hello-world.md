@@ -1,5 +1,10 @@
 ---
 title: 日常创建博客到部署的流程
+categories: 日常
+tags:
+  - Hexo
+  - 博客
+description: 博客搭建与日常更新流程记录。
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

@@ -1,7 +1,14 @@
 ---
 title: AI应用平台 - 用户模块
 date: 2025-12-11 18:28:01
-categories:
+categories: 项目
+tags:
+  - Go
+  - Gin
+  - JWT
+  - Redis
+  - MySQL
+description: AI 应用平台用户模块的设计与实现，采用 Gin + JWT + Redis + MySQL 技术栈，支持注册、登录、认证功能。
 ---
 
 # 概述

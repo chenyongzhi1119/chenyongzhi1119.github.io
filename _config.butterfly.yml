@@ -17,13 +17,14 @@ menu:
   Archives: /archives/ || fas fa-archive
   Categories: /categories/ || fas fa-folder-open
   Tags: /tags/ || fas fa-tags
+  About: /about/ || fas fa-user
 
 # --------------------------------------
 # Code Blocks Settings
 # --------------------------------------
 
 code_blocks:
-  theme: pale night
+  theme: darker
   macStyle: true
   height_limit: false
   word_wrap: false
@@ -110,9 +111,9 @@ subtitle:
   typed_option:
   source: false
   sub:
-    - 在校研究生 | 热爱编程与算法
-    - Keep learning, keep building.
-    - 分享技术，记录成长
+    - 在校研究生 | 专注 AI & 系统方向
+    - 探索 Go / Python / C++ 的边界
+    - 记录每一次从 0 到 1 的构建
 
 index_layout: 3
 
@@ -193,7 +194,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: 在校研究生 | 热爱编程与算法
+    description: 在校研究生 | 专注 AI & 系统方向 | Go / Python / C++
     button:
       enable: true
       icon: fab fa-github

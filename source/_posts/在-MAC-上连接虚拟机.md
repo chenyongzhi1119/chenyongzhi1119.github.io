@@ -1,7 +1,13 @@
 ---
 title: 在 MAC 上连接虚拟机
 date: 2025-08-16 00:11:34
-categories:
+categories: 工具
+tags:
+  - Mac
+  - 虚拟机
+  - SSH
+  - 效率工具
+description: 在 Mac 上通过 SSH 连接 Parallels 或 VMware 虚拟机的详细步骤，包括网络配置和常见问题。
 ---
 
 
