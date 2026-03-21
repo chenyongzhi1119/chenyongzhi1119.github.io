@@ -8,7 +8,7 @@
   <link href="https://chenyongzhi1119.github.io/" rel="alternate"/>
   <link href="https://chenyongzhi1119.github.io/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, Chen Yongzhi</rights>
-  <subtitle>专注 AI · Golang · 系统方向的技术博客</subtitle>
+  <subtitle>A Tech Blog Focused on AI · Golang · Systems</subtitle>
   <title>Chen Yongzhi's Blog</title>
   <updated>2026-03-21T09:49:57.563Z</updated>
   <entry>
@@ -148,7 +148,7 @@
     <category term="虚拟机" scheme="https://chenyongzhi1119.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     <category term="SSH" scheme="https://chenyongzhi1119.github.io/tags/SSH/"/>
     <content>
-      <![CDATA[<h2 id="连接前准备"><a href="#连接前准备" class="headerlink" title="连接前准备"></a>连接前准备</h2><ol><li>确定虚拟机网络设置是「桥接模式」。</li><li>在虚拟机的终端中，使用 ifconfig 命令查看虚拟机的 IP 地址。</li><li>确定当前虚拟机的用户名和密码。</li></ol><h2 id="在-MAC-上连接虚拟机"><a href="#在-MAC-上连接虚拟机" class="headerlink" title="在 MAC 上连接虚拟机"></a>在 MAC 上连接虚拟机</h2><ol><li>打开终端。</li><li>使用 ssh 命令连接到虚拟机：ssh <a href="mailto:&#112;&#97;&#114;&#97;&#108;&#108;&#x65;&#x6c;&#x73;&#64;&#49;&#57;&#x32;&#46;&#x31;&#54;&#x38;&#x2e;&#49;&#x2e;&#x31;&#48;&#49;">parallels@192.168.1.101</a> -p 22<ul><li>将 <code>parallels</code> 替换为你的虚拟机用户名。</li><li>将 <code>192.168.1.101</code> 替换为你的虚拟机 IP 地址。</li><li>将 <code>22</code> 替换为你的虚拟机 SSH 端口号（默认是 22）。</li></ul></li><li>输入密码以完成连接。</li></ol><p>连接成功后，你将看到MAC的命令行界面：<br><img src="/../images/2025-08-16-00-48-17.png"></p><h2 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h2><ol><li>输入 exit 命令退出连接。</li></ol>]]>
+      <![CDATA[<h2 id="连接前准备"><a href="#连接前准备" class="headerlink" title="连接前准备"></a>连接前准备</h2><ol><li>确定虚拟机网络设置是「桥接模式」。</li><li>在虚拟机的终端中，使用 ifconfig 命令查看虚拟机的 IP 地址。</li><li>确定当前虚拟机的用户名和密码。</li></ol><h2 id="在-MAC-上连接虚拟机"><a href="#在-MAC-上连接虚拟机" class="headerlink" title="在 MAC 上连接虚拟机"></a>在 MAC 上连接虚拟机</h2><ol><li>打开终端。</li><li>使用 ssh 命令连接到虚拟机：ssh <a href="mailto:&#112;&#x61;&#114;&#97;&#108;&#x6c;&#x65;&#108;&#115;&#64;&#49;&#x39;&#50;&#x2e;&#x31;&#54;&#x38;&#46;&#x31;&#46;&#49;&#48;&#x31;">parallels@192.168.1.101</a> -p 22<ul><li>将 <code>parallels</code> 替换为你的虚拟机用户名。</li><li>将 <code>192.168.1.101</code> 替换为你的虚拟机 IP 地址。</li><li>将 <code>22</code> 替换为你的虚拟机 SSH 端口号（默认是 22）。</li></ul></li><li>输入密码以完成连接。</li></ol><p>连接成功后，你将看到MAC的命令行界面：<br><img src="/../images/2025-08-16-00-48-17.png"></p><h2 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h2><ol><li>输入 exit 命令退出连接。</li></ol>]]>
     </content>
     <id>https://chenyongzhi1119.github.io/posts/%E5%9C%A8-MAC-%E4%B8%8A%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
     <link href="https://chenyongzhi1119.github.io/posts/%E5%9C%A8-MAC-%E4%B8%8A%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
