@@ -51,6 +51,25 @@
       <name>Chen Yongzhi</name>
     </author>
     <category term="工具" scheme="https://chenyongzhi1119.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="效率工具" scheme="https://chenyongzhi1119.github.io/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/"/>
+    <category term="macOS" scheme="https://chenyongzhi1119.github.io/tags/macOS/"/>
+    <category term="终端" scheme="https://chenyongzhi1119.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
+    <category term="iTerm2" scheme="https://chenyongzhi1119.github.io/tags/iTerm2/"/>
+    <content>
+      <![CDATA[<p>macOS 自带的 Terminal（终端）能完成大多数命令行任务，但如果你每天都在用命令行，iTerm2 在体验、功能和定制化上会让你感受到明显的差距。</p><span id="more"></span><h2 id="1-分屏与标签管理"><a href="#1-分屏与标签管理" class="headerlink" title="1. 分屏与标签管理"></a>1. 分屏与标签管理</h2><p>macOS 终端支持多标签，但分屏功能极其有限。</p><p>iTerm2 支持：</p><ul><li><strong>水平 &#x2F; 垂直任意分屏</strong>（<code>⌘D</code> &#x2F; <code>⌘⇧D</code>）</li><li><strong>标签内嵌套多个面板</strong></li><li><strong>拖拽调整面板大小</strong></li></ul><p>左边跑服务器日志，右边编辑配置文件，下方执行命令——全在一个窗口完成，不需要反复切换应用。</p><hr><h2 id="2-强大的搜索与高亮"><a href="#2-强大的搜索与高亮" class="headerlink" title="2. 强大的搜索与高亮"></a>2. 强大的搜索与高亮</h2><table><thead><tr><th>功能</th><th>终端</th><th>iTerm2</th></tr></thead><tbody><tr><td>全文搜索</td><td>❌</td><td>✅ 实时高亮</td></tr><tr><td>正则搜索</td><td>❌</td><td>✅</td></tr><tr><td>触发器高亮</td><td>❌</td><td>✅ 自定义规则</td></tr></tbody></table><p><code>⌘F</code> 打开搜索栏，支持正则表达式，匹配内容即时高亮。调试日志时非常实用。</p><hr><h2 id="3-自动补全与命令历史"><a href="#3-自动补全与命令历史" class="headerlink" title="3. 自动补全与命令历史"></a>3. 自动补全与命令历史</h2><ul><li><strong><code>⌘;</code></strong>：打开自动补全弹窗，基于历史命令提示</li><li><strong><code>⌘⇧H</code></strong>：粘贴历史记录，可搜索所有历史复制内容</li><li><strong><code>⌘⌥B</code></strong>：Instant Replay——像录像回放一样回溯终端输出，即使内容已滚出屏幕也能找回</li></ul><hr><h2 id="4-配置文件（Profiles）"><a href="#4-配置文件（Profiles）" class="headerlink" title="4. 配置文件（Profiles）"></a>4. 配置文件（Profiles）</h2><p>iTerm2 支持多个配置文件（Profiles），每个 Profile 可以独立设置：</p><ul><li>字体、字号、配色方案</li><li>默认工作目录</li><li>环境变量</li><li>启动命令（如自动 SSH 到某台服务器）</li></ul><p>为每个项目或服务器创建一个 Profile，一键打开就自动连接到对应环境，省去重复输入的麻烦。</p><hr><h2 id="5-触发器（Triggers）"><a href="#5-触发器（Triggers）" class="headerlink" title="5. 触发器（Triggers）"></a>5. 触发器（Triggers）</h2><p>根据终端输出内容自动执行动作，这个功能系统终端完全没有：</p><ul><li>输出包含 <code>ERROR</code> → 自动高亮 + 发送系统通知</li><li>匹配特定 URL → 自动打开浏览器</li><li>匹配 IP 地址 → 高亮显示</li></ul><p>在 <strong>Preferences → Profiles → Advanced → Triggers</strong> 中配置。</p><hr><h2 id="6-Shell-集成"><a href="#6-Shell-集成" class="headerlink" title="6. Shell 集成"></a>6. Shell 集成</h2><p>安装 Shell Integration 后（<code>iTerm2 → Install Shell Integration</code>）：</p><ul><li>每条命令的执行时间自动标注在右侧</li><li>上一条命令的退出状态用颜色标识（绿色成功 &#x2F; 红色失败）</li><li><code>⌘⇧Up/Down</code> 快速跳转到上&#x2F;下一条命令的起始位置</li></ul><p>这几个功能合在一起，让你在翻看长输出时效率大幅提升。</p><hr><h2 id="7-其他实用功能"><a href="#7-其他实用功能" class="headerlink" title="7. 其他实用功能"></a>7. 其他实用功能</h2><table><thead><tr><th>功能</th><th>说明</th></tr></thead><tbody><tr><td>鼠标选中自动复制</td><td>选中即复制，无需 <code>⌘C</code></td></tr><tr><td>内置密码管理器</td><td>存储常用密码，一键粘贴</td></tr><tr><td>广播输入</td><td>同时向多个面板发送相同命令</td></tr><tr><td>静默通知</td><td>长任务完成后系统通知提醒</td></tr><tr><td>配色主题</td><td>兼容 Solarized、Dracula、Nord 等主流主题</td></tr><tr><td>Visor 模式</td><td>最小化到状态栏，热键随时呼出</td></tr></tbody></table><hr><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>如果你每天都在使用命令行，iTerm2 相比系统终端能显著提升效率。<strong>分屏、搜索、Profiles、Shell Integration</strong> 这四个功能就已经值得迁移。</p><p>下载地址：<a href="https://iterm2.com/">https://iterm2.com</a>（免费开源）</p><p>推荐搭配 <strong>Oh My Zsh</strong> + <strong>Starship 提示符</strong>，打造完整的命令行工作流。</p>]]>
+    </content>
+    <id>https://chenyongzhi1119.github.io/posts/iTerm2-vs-%E7%BB%88%E7%AB%AF/</id>
+    <link href="https://chenyongzhi1119.github.io/posts/iTerm2-vs-%E7%BB%88%E7%AB%AF/"/>
+    <published>2026-03-20T16:00:00.000Z</published>
+    <summary>macOS 自带终端能用，但 iTerm2 在分屏、搜索、配置文件、Shell 集成等方面全面超越它。本文梳理 iTerm2 的核心优势。</summary>
+    <title>为什么要用 iTerm2 而不是 macOS 自带终端</title>
+    <updated>2026-03-21T14:12:38.733Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Chen Yongzhi</name>
+    </author>
+    <category term="工具" scheme="https://chenyongzhi1119.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     <category term="AI" scheme="https://chenyongzhi1119.github.io/tags/AI/"/>
     <category term="Claude Code" scheme="https://chenyongzhi1119.github.io/tags/Claude-Code/"/>
     <category term="效率工具" scheme="https://chenyongzhi1119.github.io/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/"/>
@@ -129,7 +148,7 @@
     <category term="虚拟机" scheme="https://chenyongzhi1119.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     <category term="SSH" scheme="https://chenyongzhi1119.github.io/tags/SSH/"/>
     <content>
-      <![CDATA[<h2 id="连接前准备"><a href="#连接前准备" class="headerlink" title="连接前准备"></a>连接前准备</h2><ol><li>确定虚拟机网络设置是「桥接模式」。</li><li>在虚拟机的终端中，使用 ifconfig 命令查看虚拟机的 IP 地址。</li><li>确定当前虚拟机的用户名和密码。</li></ol><h2 id="在-MAC-上连接虚拟机"><a href="#在-MAC-上连接虚拟机" class="headerlink" title="在 MAC 上连接虚拟机"></a>在 MAC 上连接虚拟机</h2><ol><li>打开终端。</li><li>使用 ssh 命令连接到虚拟机：ssh <a href="mailto:&#112;&#x61;&#114;&#x61;&#108;&#x6c;&#101;&#x6c;&#115;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#x38;&#x2e;&#49;&#x2e;&#49;&#x30;&#49;">parallels@192.168.1.101</a> -p 22<ul><li>将 <code>parallels</code> 替换为你的虚拟机用户名。</li><li>将 <code>192.168.1.101</code> 替换为你的虚拟机 IP 地址。</li><li>将 <code>22</code> 替换为你的虚拟机 SSH 端口号（默认是 22）。</li></ul></li><li>输入密码以完成连接。</li></ol><p>连接成功后，你将看到MAC的命令行界面：<br><img src="/../images/2025-08-16-00-48-17.png"></p><h2 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h2><ol><li>输入 exit 命令退出连接。</li></ol>]]>
+      <![CDATA[<h2 id="连接前准备"><a href="#连接前准备" class="headerlink" title="连接前准备"></a>连接前准备</h2><ol><li>确定虚拟机网络设置是「桥接模式」。</li><li>在虚拟机的终端中，使用 ifconfig 命令查看虚拟机的 IP 地址。</li><li>确定当前虚拟机的用户名和密码。</li></ol><h2 id="在-MAC-上连接虚拟机"><a href="#在-MAC-上连接虚拟机" class="headerlink" title="在 MAC 上连接虚拟机"></a>在 MAC 上连接虚拟机</h2><ol><li>打开终端。</li><li>使用 ssh 命令连接到虚拟机：ssh <a href="mailto:&#112;&#97;&#114;&#97;&#108;&#108;&#x65;&#x6c;&#x73;&#64;&#49;&#57;&#x32;&#46;&#x31;&#54;&#x38;&#x2e;&#49;&#x2e;&#x31;&#48;&#49;">parallels@192.168.1.101</a> -p 22<ul><li>将 <code>parallels</code> 替换为你的虚拟机用户名。</li><li>将 <code>192.168.1.101</code> 替换为你的虚拟机 IP 地址。</li><li>将 <code>22</code> 替换为你的虚拟机 SSH 端口号（默认是 22）。</li></ul></li><li>输入密码以完成连接。</li></ol><p>连接成功后，你将看到MAC的命令行界面：<br><img src="/../images/2025-08-16-00-48-17.png"></p><h2 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h2><ol><li>输入 exit 命令退出连接。</li></ol>]]>
     </content>
     <id>https://chenyongzhi1119.github.io/posts/%E5%9C%A8-MAC-%E4%B8%8A%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
     <link href="https://chenyongzhi1119.github.io/posts/%E5%9C%A8-MAC-%E4%B8%8A%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
