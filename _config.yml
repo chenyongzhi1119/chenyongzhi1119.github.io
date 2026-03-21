@@ -4,9 +4,9 @@
 
 # Site
 title: Chen Yongzhi's Blog
-subtitle: 专注 AI · Golang · 系统方向的技术博客
-description: '在校研究生，记录编程学习、算法、AI 项目的技术博客'
-keywords: '博客,编程,算法,AI,Go,Python,研究生'
+subtitle: A Tech Blog Focused on AI · Golang · Systems
+description: 'A grad student documenting programming, algorithms, and AI projects'
+keywords: 'blog,programming,algorithm,AI,Go,Python,graduate'
 author: Chen Yongzhi
 language: zh-CN
 timezone: 'Asia/Shanghai'
