@@ -162,6 +162,314 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://chenyongzhi1119.github.io/2026/03/20/claude-code%E6%96%B0%E6%89%8B%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chen Yongzhi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chen Yongzhi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/03/20/claude-code%E6%96%B0%E6%89%8B%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="post-title-link" itemprop="url">Claude Code 新手使用技巧</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2026-03-20 00:00:00" itemprop="dateCreated datePublished" datetime="2026-03-20T00:00:00+08:00">2026-03-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2026-03-21 14:15:01" itemprop="dateModified" datetime="2026-03-21T14:15:01+08:00">2026-03-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Claude Code 是 Anthropic 推出的 AI 编程助手 CLI 工具，能够直接在终端中读写代码、执行命令、操作 Git 等。本文整理了新手上手时最实用的技巧。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/03/20/claude-code%E6%96%B0%E6%89%8B%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://chenyongzhi1119.github.io/2025/12/11/AI%E5%BA%94%E7%94%A8%E5%B9%B3%E5%8F%B0-%E7%94%A8%E6%88%B7%E6%A8%A1%E5%9D%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chen Yongzhi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chen Yongzhi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/12/11/AI%E5%BA%94%E7%94%A8%E5%B9%B3%E5%8F%B0-%E7%94%A8%E6%88%B7%E6%A8%A1%E5%9D%97/" class="post-title-link" itemprop="url">AI应用平台 - 用户模块</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-12-11 18:28:01 / Modified: 18:51:32" itemprop="dateCreated datePublished" datetime="2025-12-11T18:28:01+08:00">2025-12-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>用户模块是 AI应用平台的用户管理模块，负责用户的注册、登录、认证和管理。该模块采用 MVC 架构，使用 Gin 架构处理 HTTP 请求，集成 JWT 进行身份验证，并通过 Redis 缓存验证码、MySQL 存储用户数据。</p>
+<p>模块支持邮件注册、账号登录、并提供安全的令牌机制确保用户会话的安全性。</p>
+<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><p><img src="/../images/image.png" alt="alt text"></p>
+<ol>
+<li>前端。Vue 组件（Login.vue&#x2F;Register.vue）发起 HTTP 请求，发送用户输入的账号密码或邮箱验证码。</li>
+<li>路由层：user.go中的 Gin 路由器匹配路径（如 user&#x2F;login或user&#x2F;register），并将请求分发到相应的控制器。</li>
+<li>中间件层：jwt.go中的 JWT 中间件验证请求中的令牌，确保用户身份合法。</li>
+<li>控制器层：绑定请求参数，调用服务层方法。</li>
+<li>服务层：处理业务逻辑，如验证用户信息、生成令牌、发送验证码等。</li>
+<li>数据访问层：与 MySQL 交互，查询用户存在性或插入新用户记录</li>
+<li>通用组件：Redis 缓存验证码、Email 发送账号邮件、MyJWT 生成 HS256 的 Token</li>
+</ol>
+<h1 id="用户模型"><a href="#用户模型" class="headerlink" title="用户模型"></a>用户模型</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">type User struct &#123;</span><br><span class="line">    ID        int64          `gorm:&quot;primaryKey&quot; json:&quot;id&quot;`</span><br><span class="line">    Name      string         `gorm:&quot;type:varchar(50)&quot; json:&quot;name&quot;`</span><br><span class="line">    Email     string         `gorm:&quot;type:varchar(100);index&quot; json:&quot;email&quot;`</span><br><span class="line">    Username  string         `gorm:&quot;type:varchar(50);uniqueIndex&quot; json:&quot;username&quot;` // 唯一索引</span><br><span class="line">    Password  string         `gorm:&quot;type:varchar(255)&quot; json:&quot;-&quot;`                   // 不返回给前端</span><br><span class="line">    CreatedAt time.Time      `json:&quot;created_at&quot;`                                   // 自动时间戳</span><br><span class="line">    UpdatedAt time.Time      `json:&quot;updated_at&quot;`</span><br><span class="line">    DeletedAt gorm.DeletedAt `gorm:&quot;index&quot; json:&quot;-&quot;` // 支持软删除</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://chenyongzhi1119.github.io/2025/08/25/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chen Yongzhi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chen Yongzhi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/08/25/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93/" class="post-title-link" itemprop="url">搭建本地知识库</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-08-25 21:49:49 / Modified: 22:34:51" itemprop="dateCreated datePublished" datetime="2025-08-25T21:49:49+08:00">2025-08-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="为什么要本地部署"><a href="#为什么要本地部署" class="headerlink" title="为什么要本地部署"></a>为什么要本地部署</h2><p>本地部署大模型有很多优点：</p>
+<ol>
+<li>免费。本地的模型部署可以随便玩，不用担心任何付费。你只需要有一个好的设备。</li>
+<li>数据隐私。当我们使用网页版的大模型时，所有数据都需要上传到服务器进行处理，这意味着我们的数据可能被泄露。而本地部署大模型则可以完全避免这个问题，因为所有数据都存储在本地，不会上传到云端。</li>
+<li>无需网络依赖。无论是在家中还是在旅途中，只要有设备，就可以随时随地使用模型，而不必担心网络连接问题。</li>
+</ol>
+<h2 id="大模型的满血版和蒸馏版"><a href="#大模型的满血版和蒸馏版" class="headerlink" title="大模型的满血版和蒸馏版"></a>大模型的满血版和蒸馏版</h2><p>本地部署大模型有一个很大的局限性，就是很依赖本地设备的硬件配置。</p>
+<p>一般，我们普通的电脑肯定是带不动满血版的大模型，所以本地部署一般是蒸馏版。</p>
+<blockquote>
+<p>蒸馏版是指通过模型蒸馏技术，将大模型压缩成小模型的过程。这个过程可以保留大模型的知识，同时减少模型的大小和计算量，从而使其能够在普通电脑上运行。</p>
+<p>满血版则是指未经压缩的原始模型，通常需要更强大的硬件支持。</p>
+</blockquote>
+<p>一般的蒸馏版本有以下几种：</p>
+<p><img src="/../images/2025-08-25-22-11-18.png"></p>
+<ul>
+<li>DeepSeek-R1 是主模型的名字。</li>
+<li>Distill 表示蒸馏</li>
+<li>DeepSeek-R1-Distill-Qwen-32B 表示是基于阿里的开源大模型千问蒸馏而来的。</li>
+<li>32B 表示模型的参数量是 32 Billion。</li>
+</ul>
+<h2 id="本地大模型的部署步骤"><a href="#本地大模型的部署步骤" class="headerlink" title="本地大模型的部署步骤"></a>本地大模型的部署步骤</h2><h3 id="通过-Ollama-本地部署-DeepSeek"><a href="#通过-Ollama-本地部署-DeepSeek" class="headerlink" title="通过 Ollama 本地部署 DeepSeek"></a>通过 Ollama 本地部署 DeepSeek</h3><p>Ollama 是一个开源的本地大语言模型运行框架，专为在本地机器上便捷部署和运行大型语言模型（LLM）而设计。</p>
+<p>Ollama 的下载和部署大模型可以通过以下步骤进行：</p>
+<ol>
+<li>访问 <a target="_blank" rel="noopener" href="https://ollama.com/download">https://ollama.com/download</a></li>
+<li>根据你的操作系统选择合适的安装包进行下载。</li>
+<li>安装完成后，打开终端（Terminal）并输入</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ollama --version <span class="comment"># 查看版本号，确认安装成功</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>在 <a target="_blank" rel="noopener" href="https://ollama.com/search">https://ollama.com/search</a> 中搜索 DeepSeek 模型并查看相关的下载命令。</li>
+</ol>
+<p><img src="/../images/2025-08-25-22-24-14.png"></p>
+<p><img src="/../images/2025-08-25-22-25-33.png"></p>
+<ol start="5">
+<li>在本地终端上输入下载命令进行模型下载。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ollama run deepseek-r1:1.5b</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Anything-LLM-Ollama-打通本地知识库"><a href="#Anything-LLM-Ollama-打通本地知识库" class="headerlink" title="Anything LLM + Ollama - 打通本地知识库"></a>Anything LLM + Ollama - 打通本地知识库</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://chenyongzhi1119.github.io/2025/08/20/Unsloth-%E5%BE%AE%E8%B0%83%E6%A8%A1%E5%9E%8B%E5%B9%B6%E5%8F%91%E5%B8%83%E5%88%B0-Hugging-face/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chen Yongzhi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chen Yongzhi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/08/20/Unsloth-%E5%BE%AE%E8%B0%83%E6%A8%A1%E5%9E%8B%E5%B9%B6%E5%8F%91%E5%B8%83%E5%88%B0-Hugging-face/" class="post-title-link" itemprop="url">Unsloth 微调模型并发布到 Hugging face</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-08-20 23:04:18" itemprop="dateCreated datePublished" datetime="2025-08-20T23:04:18+08:00">2025-08-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://chenyongzhi1119.github.io/2025/08/16/%E5%9C%A8-MAC-%E4%B8%8A%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -625,172 +933,11 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://chenyongzhi1119.github.io/2025/07/05/%E7%AE%97%E6%B3%95%E6%96%B9%E5%90%91%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chen Yongzhi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chen Yongzhi's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/07/05/%E7%AE%97%E6%B3%95%E6%96%B9%E5%90%91%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/" class="post-title-link" itemprop="url">算法方向的学习规划</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2025-07-05 17:43:45" itemprop="dateCreated datePublished" datetime="2025-07-05T17:43:45+08:00">2025-07-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-07-16 01:17:49" itemprop="dateModified" datetime="2025-07-16T01:17:49+08:00">2025-07-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%A7%84%E5%88%92/" itemprop="url" rel="index"><span itemprop="name">规划</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h2><ol>
-<li>Transformer 相关论文学习</li>
-<li>个人实践</li>
-<li>搭建阿里天池的新闻推荐系统</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;nihao1&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://chenyongzhi1119.github.io/2025/07/05/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chen Yongzhi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chen Yongzhi's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/07/05/hello-world/" class="post-title-link" itemprop="url">日常创建博客到部署的流程</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2025-07-05 15:46:51" itemprop="dateCreated datePublished" datetime="2025-07-05T15:46:51+08:00">2025-07-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-07-16 01:22:08" itemprop="dateModified" datetime="2025-07-16T01:22:08+08:00">2025-07-16</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p><img src="image.png" alt="alt text"></p>
-<h3 id="Step0-clean"><a href="#Step0-clean" class="headerlink" title="Step0 clean"></a>Step0 clean</h3><p>清除缓存，不一定需要。当页面不更新时可以先运行这个命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-
-<h3 id="Step1-Create-a-new-post"><a href="#Step1-Create-a-new-post" class="headerlink" title="Step1 Create a new post"></a>Step1 Create a new post</h3><p>创建了一个名为My New Post.md的文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Step2-Generate-static-files"><a href="#Step2-Generate-static-files" class="headerlink" title="Step2 Generate static files"></a>Step2 Generate static files</h3><p>生成一个静态页面资源</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Step3-Run-server"><a href="#Step3-Run-server" class="headerlink" title="Step3 Run server"></a>Step3 Run server</h3><p>部署到本地</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Step4-Deploy-to-remote-sites"><a href="#Step4-Deploy-to-remote-sites" class="headerlink" title="Step4 Deploy to remote sites"></a>Step4 Deploy to remote sites</h3><p>如果在本地运行没什么问题后，部署到远程服务器上</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
 
 
 
@@ -855,15 +1002,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
@@ -889,7 +1041,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2025</span>
+  <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
